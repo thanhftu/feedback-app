@@ -2,12 +2,12 @@ import React from "react";
 import FeedbackItem from "./Feedbackitem";
 import PropTypes from "prop-types";
 
-const FeedbackList = ({ feedback }) => {
+const FeedbackList = ({ feedback, handleDelete }) => {
   if (!feedback || feedback.length === 0) return <h1>No feedback yet</h1>;
   return (
     <div>
       {feedback.map((item) => (
-        <FeedbackItem item={item} key={item.id} />
+        <FeedbackItem item={item} key={item.id} handleDelete={handleDelete} />
       ))}
     </div>
   );
