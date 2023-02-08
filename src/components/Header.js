@@ -20,7 +20,7 @@ Header.defaultProps = {
   textColor: "#ff6a95",
 };
 
-Header.prototype = {
+Header.protoTypes = {
   text: PropTypes.string,
   bgColor: PropTypes.string,
   textColor: PropTypes.string,
