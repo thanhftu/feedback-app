@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function RatingSelect({ select, selected }) {
   const clickHandler = (e) => {
     console.log(e.target.getAttribute("value"));
